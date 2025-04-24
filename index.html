@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoVerse</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+      
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@500&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+    <script src="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./Images/AVlogo.png" height="52px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 mb-2 p-2">
+            <li class="nav-item ms-2">
+              <a class="nav-link" aria-current="page" href="./navbar/nav1.html" >News & Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./navbar/nav2.html">New Cars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./navbar/nav3.html">New Bikes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >More</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                <li><a class="dropdown-item" href="#">Auto Expo 2025</a></li>
+                <li><a class="dropdown-item" href="#">Electric Vehicle</a></li>
+                <li><a class="dropdown-item" href="#">Used Cars</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="./dropdown/autoexpo.html">About Us</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <form class="d-flex search-btn">
+              <div class="input-group">
+                <input
+                  class="form-control search-input"
+                  type="search"
+                  id="search-box"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i class="fa-solid fa-magnifying-glass input-group-icon"></i>
+              </div>
+            </form>
+            <button
+              class="btn btn-outline-secondary login-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- **LOGIN PAGE** -->
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="./Images/AVlogo.png" height="52px" />
+            <h6 class="modal-title" id="exampleModalLabel">Login/Register</h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="login-form">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  required
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="rememberMe"
+                />
+                <label class="form-check-label" for="rememberMe"
+                  >Remember me</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+              <div class="text-center mt-3">
+                <a href="#" class="text-decoration-none">Forgot Password?</a>
+              </div>
+              <hr />
+                <p class="mt-3 text-center">
+                  Don't have an account?
+                  <a href="#" class="text-decoration-none">Sign Up</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **CAROUSEL** -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./Images/carousel6.avif"
+            class="d-block w-100"
+            alt="First Slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Images/carousel2.avif"
+            class="d-block w-100"
+            alt="Second Slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Images/carousel3.avif"
+            class="d-block w-100"
+            alt="Third Slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Images/carousel1.avif"
+            class="d-block w-100"
+            alt="Fourth Slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Images/carousel5.avif"
+            class="d-block w-100"
+            alt="Fifth Slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Images/carousel7.avif"
+            class="d-block w-100"
+            alt="Sixth Slide"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h3 class="mb-4 fw-bold text-center">Top Car Brands in India</h3>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <div class="brand-box text-center">
+            <img src="Images/suzuki.jpeg" alt="Maruti Suzuki" class="brand-logo" />
+            <p class="brand-name">Maruti Suzuki</p>
+          </div>
+          <div class="brand-box text-center">
+            <img src="Images/tata.png" alt="Tata" class="brand-logo"/>
+            <p class="brand-name">Tata</p>
+          </div>
+          <div class="brand-box text-center">
+            <img src="Images/kia.png" alt="Kia" class="brand-logo" />
+            <p class="brand-name">Kia</p>
+          </div>
+          <div class="brand-box text-center">
+            <img src="Images/toyota.jpeg" alt="Toyota" class="brand-logo" />
+            <p class="brand-name">Toyota</p>
+          </div>
+          <div class="brand-box text-center">
+            <img src="Images/bmw.png" alt="BMW" class="brand-logo" />
+            <p class="brand-name">BMW</p>
+          </div>
+          <div class="brand-box text-center">
+            <img src="Images/hyundai.png" alt="Hyundai" class="brand-logo" />
+            <p class="brand-name">Hyundai</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="py-5">
+      <div class="container">
+        <h3 class="mb-4 fw-bold text-center">Top Cars in India</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card1 h-100 shadow">
+              <img src="Images/car4.avif" class="card-img-top" alt="Hyundai Creta"
+              data-bs-toggle="tooltip" title="Hyundai Creta - Best Overall Car ">
+              <div class="card-body">
+                <h5 class="card-title">Best Mileage Car in India</h5>
+                <p class="card-text">Hyundai Creta</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 h-100 shadow">
+              <img src="Images/car2.avif" class="card-img-top" alt="Mahindra Scorpio N"
+              data-bs-toggle="tooltip" title="Mahindra Scorpio N - Best Suv Under 20Lakh ">
+              <div class="card-body">
+                <h5 class="card-title">Best SUV Car in India</h5>
+                <p class="card-text">Mahindra Scorpio N</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1 h-100 shadow">
+              <img src="Images/lcar2.avif" class="card-img-top" alt="Maruti Swift"
+              data-bs-toggle="tooltip" title="Maruti Suzuki Swift - Best Hatchback">
+              <div class="card-body">
+                <h5 class="card-title">Best Hatchback Car in India</h5>
+                <p class="card-text">Maruti Swift</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Bike Brands in India -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h3 class="mb-4 fw-bold text-center">Top Bike Brands in India</h3>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <div class="brand-box text-center">
+        <img src="Images/tvs.png" alt="TVS" class="brand-logo" />
+        <p class="mt-2">TVS</p>
+      </div>
+      <div class="brand-box text-center">
+        <img src="Images/bajaj.jpeg" alt="Bajaj" class="brand-logo" />
+        <p class="mt-2">Bajaj</p>
+      </div>
+      <div class="brand-box text-center">
+        <img src="Images/royal.jpeg" alt="Royal Enfield" class="brand-logo" />
+        <p class="mt-2">Royal Enfield</p>
+      </div>
+      <div class="brand-box text-center">
+        <img src="Images/hero.png" alt="Hero" class="brand-logo" />
+        <p class="mt-2">Hero</p>
+      </div>
+      <div class="brand-box text-center">
+        <img src="Images/yamaha.jpeg" alt="Yamaha" class="brand-logo" />
+        <p class="mt-2">Yamaha</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Top Bikes in India -->
+<section class="py-5">
+  <div class="container">
+    <h3 class="mb-4 fw-bold text-center">Top Bikes in India</h3>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card1 h-100 shadow">
+          <img src="Images/hero+.jpeg" class="card-img-top" alt="Hero Splendor Plus"
+               data-bs-toggle="tooltip" title="Hero Splendor Plus - Excellent mileage bike">
+          <div class="card-body">
+            <h5 class="card-title">Top Mileage Bikes in India</h5>
+            <p class="card-text">Hero Splendor Plus</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card1 h-100 shadow">
+          <img src="Images/royal+.jpeg" class="card-img-top" alt="Royal Enfield Classic 350"
+               data-bs-toggle="tooltip" title="Royal Enfield Classic 350 - Best for long rides">
+          <div class="card-body">
+            <h5 class="card-title">Top Cruiser Bikes in India</h5>
+            <p class="card-text">Royal Enfield Classic 350</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card1 h-100 shadow">
+          <img src="Images/mt15.jpeg" class="card-img-top" alt="Yamaha MT 15 V2"
+               data-bs-toggle="tooltip" title="Yamaha MT 15 V2 - Stylish and powerful sports bike">
+          <div class="card-body">
+            <h5 class="card-title">Top Sports Bikes in India</h5>
+            <p class="card-text">Yamaha MT 15 V2</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    
+
+
+    <!-- **FOOTER** -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 ">
+            <ul class="list-unstyled">
+              <li><a href="./dropdown/autoexpo.html" class="text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-decoration-none">Your Account</a></li>
+              <li>
+                <a href="#" class="text-decoration-none">Advertise with Us</a>
+              </li>
+              <li><a href="#" class="text-decoration-none">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none">Terms of Use</a></li>
+              <li>
+                <a href="#" class="text-decoration-none">Privacy Policy</a>
+              </li>
+              <li><a href="#" class="text-decoration-none">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="copyright "><span class="container">© 2025-2026 Autoverse| All rights Reserved.
+      </span></div>
+    </footer>
+    
+    <script>
+      $(document).ready(function () {
+        var suggest = [
+          "Maruti Suzuki", "Tata Nexon", "Hyundai Creta", "Mahindra Scorpio",
+          "Kia Seltos", "Toyota Fortuner", "BMW X5", "Honda City", "Hyundai Verna",
+          "Tata Harrier", "MG Hector", "Skoda Slavia", "Volkswagen Virtus",
+          "Maruti Brezza", "Hyundai Venue", "Mahindra XUV700", "Toyota Innova Crysta",
+          "Jeep Compass", "Nissan Magnite", "Renault Kiger",
+          "Yamaha MT 15", "Royal Enfield", "Hero Splendor", "Bajaj Pulsar",
+          "TVS Apache", "KTM Duke 200", "Honda Shine", "Suzuki Gixxer", 
+          "Royal Enfield Meteor", "Bajaj Avenger", "TVS Raider", "Yamaha FZ-S",
+          "Honda Hornet 2.0", "KTM RC 390", "Yamaha R15", "Hero Xtreme 160R"
+        ];
+    
+        var stateSuggestions = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.whitespace,
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          local: suggest,
+        });
+    
+        $('#search-box').typeahead(
+          {
+            hint: true,
+            highlight: true,
+            minLength: 1,
+          },
+          {
+            name: 'suggest',
+            source: stateSuggestions,
+          }
+        );
+      });
+    </script>
+    
+  </body>
+</html>

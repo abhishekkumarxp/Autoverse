@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - AutoVerse</title>
+  <link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet"/>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .about-section {
+      padding: 60px 0;
+    }
+
+    .about-title {
+      font-size: 36px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .about-text {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .highlight {
+      color: #007bff;
+      font-weight: 600;
+    }
+
+    .team-img {
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../Images/AVlogo.png" height="52px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-lg-0 mb-2 p-2">
+              <li class="nav-item ms-2">
+                <a class="nav-link" aria-current="page" href="../navbar/nav1.html"
+                  >News & Reviews</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../navbar/nav1.html">New Cars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../navbar/nav3.html">New Bikes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >More</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                  <li><a class="dropdown-item" href="#">Auto Expo 2025</a></li>
+                  <li><a class="dropdown-item" href="#">Electric Vehicle</a></li>
+                  <li><a class="dropdown-item" href="#">Used Cars</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="./autoexpo.html">About Us</a></li>
+                </ul>
+              </li>
+            </ul>
+  
+            <div class="d-flex align-items-center">
+              <form class="d-flex search-btn">
+                <div class="input-group">
+                  <input
+                    class="form-control search-input"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <i class="fa-solid fa-magnifying-glass input-group-icon"></i>
+                </div>
+              </form>
+              <button
+                class="btn btn-outline-secondary login-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+              >
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+  <div class="container about-section">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+      </ol>
+    </nav>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="about-title">About <span class="highlight">AutoVerse</span></h2>
+        <p class="about-text">
+          Welcome to <span class="highlight">AutoVerse</span> – your one-stop destination for the latest in the automotive world. Whether you're a car enthusiast, a bike lover, or just looking for your next vehicle, we've got something for everyone.
+        </p>
+        <p class="about-text">
+          From in-depth <strong>news & reviews</strong> to detailed specs and prices of the newest cars and bikes in India, AutoVerse is designed to help you make informed decisions. We also bring updates from major auto expos and the rapidly growing electric vehicle space.
+        </p>
+        <p class="about-text">
+          Our mission is simple: to deliver accurate, up-to-date, and engaging content for all auto lovers.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../Images/AVlogo.png" alt="Team AutoVerse" class="img-fluid team-img" />
+      </div>
+    </div>
+  </div>
+
+  <script src="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

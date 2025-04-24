@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Bikes in India 2025</title>
+    <link
+      href="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@500&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .main-box {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      .card {
+        margin-bottom: 20px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .card:hover {
+        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+      }
+
+      .section-header {
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../Images/AVlogo.png" height="52px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 mb-2 p-2">
+            <li class="nav-item ms-2">
+              <a class="nav-link" aria-current="page" href="../navbar/nav1.html"
+                >News & Reviews</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../navbar/nav2.html">New Cars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../navbar/nav3.html">New Bikes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >More</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                <li><a class="dropdown-item" href="#">Auto Expo 2025</a></li>
+                <li><a class="dropdown-item" href="#">Electric Vehicle</a></li>
+                <li><a class="dropdown-item" href="#">Used Cars</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../dropdown/autoexpo.html">About Us</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <form class="d-flex search-btn">
+              <div class="input-group">
+                <input
+                  class="form-control search-input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i class="fa-solid fa-magnifying-glass input-group-icon"></i>
+              </div>
+            </form>
+            <button
+              class="btn btn-outline-secondary login-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="spinner-wrapper">
+      <div class="text-center">
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainContent" class="container mt-4 bg-light" style="display: none">
+      <div class="main-box">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Bikes</li>
+          </ol>
+        </nav>
+
+        <h1>New Bikes in India 2025</h1>
+        <p>
+          Check out the latest and best new bikes in India along with detailed
+          prices and offers only on ZigWheels. You can search new bikes by brand
+          like TVS, Honda, Royal Enfield, Hero, Yamaha and many more. Or you may
+          search new bikes based on price or budget. Have a particular body type
+          in mind like a commuter, sport bike, cruiser or want a scooter or
+          electric bike? That's possible too! From the most iconic motorcycles
+          to the top 10 bikes in India, ZigWheels has it all covered!
+        </p>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="popular-tab"
+              data-bs-toggle="tab"
+              href="#popular"
+              role="tab"
+              >Popular</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="latest-tab"
+              data-bs-toggle="tab"
+              href="#latest"
+              role="tab"
+              >Latest</a
+            >
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="popular"
+            role="tabpanel"
+            aria-labelledby="popular-tab"
+          >
+            <div class="section-header">
+              <h5>Trending Bikes in India</h5>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <img
+                    src="../Images/bike1.webp"
+                    class="card-img-top"
+                    alt="Royal Enfield Hunter 350"
+                  />
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Royal Enfield Hunter 350</h6>
+                    <p class="card-text">Rs. 1.50 Lakh</p>
+                    <a href="#" class="btn btn-outline-danger">View Offers</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img
+                    src="../Images/bike2.avif"
+                    class="card-img-top"
+                    alt="Royal Enfield Classic 350"
+                  />
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Royal Enfield Classic 350</h6>
+                    <p class="card-text">Rs. 1.95 Lakh</p>
+                    <a href="#" class="btn btn-outline-danger">View Offers</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img
+                    src="../Images/bike3.avif"
+                    class="card-img-top"
+                    alt="Royal Enfield Continental GT 650"
+                  />
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Royal Enfield Continental GT 650</h6>
+                    <p class="card-text">Rs. 3.20 Lakh</p>
+                    <a href="#" class="btn btn-outline-danger">View Offers</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img
+                    src="../Images/bike4.webp"
+                    class="card-img-top"
+                    alt="Yamaha Mt 15"
+                  />
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Yamaha Mt 15</h6>
+                    <p class="card-text">Rs. 1.69 Lakh</p>
+                    <a href="#" class="btn btn-outline-danger">View Offers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="latest"
+            role="tabpanel"
+            aria-labelledby="latest-tab"
+          >
+            <div class="section-header">
+              <h5>Latest Bikes in India</h5>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <img
+                    src="../Images/lbike1.avif"
+                    class="card-img-top"
+                    alt="Royal Enfield Classic 650"
+                  />
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Royal Enfield Classic 650</h6>
+                    <p class="card-text">Rs. 3.40 Lakh</p>
+                    <a href="#" class="btn btn-outline-danger">View Offers</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img
+                    src="../Images/lbike2.avif"
+                    class="card-img-top"
+                    alt="Yamaha FZ-S Fi Hybrid"
+                  />
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Yamaha FZ-S Fi Hybrid</h6>
+                    <p class="card-text">Rs. 1.30 Lakh</p>
+                    <a href="#" class="btn btn-outline-danger">View Offers</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img
+                    src="../Images/lbike3.avif"
+                    class="card-img-top"
+                    alt="Ultraviolette Shockwave"
+                  />
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Ultraviolette Shockwave</h6>
+                    <p class="card-text">Rs. 1.59 Lakh</p>
+                    <a href="#" class="btn btn-outline-danger">View Offers</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img
+                    src="../Images/lbike4.avif"
+                    class="card-img-top"
+                    alt="Ultraviolette Tesseract"
+                  />
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Ultraviolette Tesseract</h6>
+                    <p class="card-text">Rs. 1.20 Lakh</p>
+                    <a href="#" class="btn btn-outline-danger">View Offers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      setTimeout(() => {
+        document.querySelector(".spinner-wrapper").style.display = "none";
+        const content = document.querySelector("#mainContent");
+        content.style.display = "block";
+      }, 300);
+    </script>
+  </body>
+</html>

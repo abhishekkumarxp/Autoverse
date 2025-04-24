@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car News & Reviews</title>
+    <link
+      href="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@500&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../Images/AVlogo.png" height="52px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 mb-2 p-2">
+            <li class="nav-item ms-2">
+              <a class="nav-link" aria-current="page" href="../navbar/nav1.html"
+                >News & Reviews</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../navbar/nav2.html">New Cars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../navbar/nav3.html">New Bikes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >More</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                <li><a class="dropdown-item" href="#">Auto Expo 2025</a></li>
+                <li><a class="dropdown-item" href="#">Electric Vehicle</a></li>
+                <li><a class="dropdown-item" href="#">Used Cars</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../dropdown/autoexpo.html">About Us</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <form class="d-flex search-btn">
+              <div class="input-group">
+                <input
+                  class="form-control search-input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i class="fa-solid fa-magnifying-glass input-group-icon"></i>
+              </div>
+            </form>
+            <button
+              class="btn btn-outline-secondary login-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="spinner-wrapper">
+      <div class="text-center">
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainContent" class="container mt-4 bg-light" style="display: none">
+      <div class="bg-white p-4 rounded">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">News</li>
+          </ol>
+        </nav>
+
+        <h2>Automobile News in India & Expert Reviews</h2>
+        <p class="text-muted">
+          Stay updated with the latest automotive news, expert reviews, and
+          updates from the world of cars in India.
+        </p>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="news-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#news"
+              type="button"
+              role="tab"
+              aria-controls="news"
+              aria-selected="true"
+            >
+              News
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="reviews-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#reviews"
+              type="button"
+              role="tab"
+              aria-controls="reviews"
+              aria-selected="false"
+            >
+              Reviews
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="news"
+            role="tabpanel"
+            aria-labelledby="news-tab"
+          >
+            <h5 class="mb-3 mt-2">Latest Car News</h5>
+
+            <div class="row mb-4 border-bottom pb-3">
+              <div class="col-md-4">
+                <img
+                  src="../Images/nimg1.avif"
+                  alt="Car News"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-md-8">
+                <h6 class="fw-bold">
+                  Toyota Urban Cruiser Hyryder Gets 2025 Model Year Updates, New Price Starts From Rs 11.34 Lakh
+                </h6>
+                <p class="text-muted mb-0">
+                  The updated Toyota Urban Cruiser Hyryder now brings new convenience and safety features besides an automatic transmission for its all wheel drive variant.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4 border-bottom pb-3">
+              <div class="col-md-4">
+                <img
+                  src="../Images/nimg2.avif"
+                  alt="Bike News"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-md-8">
+                <h6 class="fw-bold">
+                  2025 Triumph Scrambler 400 XC Buyers Won't Have To Worry About Punctures
+                </h6>
+                <p class="text-muted mb-0">
+                  The Scrambler 400 X's more hardcore sibling coming in hot
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4 border-bottom pb-3">
+              <div class="col-md-4">
+                <img
+                  src="../Images/nimg3.avif"
+                  alt="Car News"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-md-8">
+                <h6 class="fw-bold">
+                  Check Out The Top 5 Car Launches To Watch Out For In Q2 Of 2025
+                </h6>
+                <p class="text-muted mb-0">
+                  The upcoming quarter could finally bring the sporty hatchback that enthusiasts have been eyeing for quite some time, along with electric SUVs from Maruti and Tata
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="reviews"
+            role="tabpanel"
+            aria-labelledby="reviews-tab"
+          >
+            <h5 class="mb-3 mt-2">Expert Car Reviews</h5>
+
+            <div class="row mb-4 border-bottom pb-3">
+              <div class="col-md-4">
+                <img
+                  src="../Images/rcar1.avif"
+                  alt="Car Review"
+                  class="img-fluid rounded"
+                  width="320px"
+                />
+              </div>
+              <div class="col-md-8">
+                <h6 class="fw-bold">
+                  Kia EV6 Road Test: Is It Worth the Premium?
+                </h6>
+                <p class="text-muted mb-0">
+                  Our experts take the Kia EV6 on a 500km drive to test its
+                  range, ride quality, features, and whether it's worth the high
+                  price tag.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4 border-bottom pb-3">
+              <div class="col-md-4">
+                <img
+                  src="../Images/rcar2.avif"
+                  alt="Car Review"
+                  class="img-fluid rounded"
+                  width="320px"
+                />
+              </div>
+              <div class="col-md-8">
+                <h6 class="fw-bold">
+                  Maruti Dzire Tour S CNG: Best Value-for-Money Sedan?
+                </h6>
+                <p class="text-muted mb-0">
+                  We take a close look at how the Dzire performs under daily
+                  driving with CNG, and if it's truly budget-friendly for fleet
+                  operators and families alike.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      setTimeout(() => {
+        document.querySelector(".spinner-wrapper").style.display = "none";
+        const content = document.querySelector("#mainContent");
+        content.style.display = "block"
+      }, 300);
+    </script>
+  </body>
+</html>

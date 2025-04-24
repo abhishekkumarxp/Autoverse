@@ -1,0 +1,208 @@
+* {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navbar-brand {
+  margin-left: 40px;
+}
+
+.navbar-nav {
+  margin-left: 70px;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black
+}
+
+.search-input {
+  padding-left: 30px;
+}
+
+.search-btn {
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid rgb(204, 76, 30);
+  font-weight: 600;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.login-btn {
+  margin-left: auto;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #6c757d;
+  color: white;
+
+}
+
+
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.login-form label {
+  font-weight: 500;
+}
+
+.social-login button {
+  min-width: 120px;
+}
+
+.modal-header {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.form-control:focus {
+  border-color: #6c757d;
+ 
+}
+
+.btn-primary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-primary:hover {
+  background-color: #5c636a;
+  border-color: #5c636a;
+}
+
+.social-login button i {
+  margin-right: 8px;
+}
+
+.text-decoration-none {
+  color: #6c757d;
+}
+
+.text-decoration-none:hover {
+  color: #5c636a;
+}
+
+
+
+.footer {
+  padding: 20px 0;
+}
+
+.footer ul {
+  padding: 0; 
+  margin: 0 ;
+}
+
+.footer li {
+  margin-bottom: 10px; 
+}
+
+.footer a:hover {
+  color: #5c636a; 
+  font-weight: 600;
+}
+
+.copyright{
+  text-align: center;
+
+}
+
+
+.spinner-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0; 
+}
+
+
+.brand-box {
+  width: 120px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-box:hover {
+  transform: translateY(-5px);
+}
+
+.brand-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.brand-name {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card1 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card1-img-top {
+  transition: transform 0.3s ease;
+  height: 250px;
+  width: 400px;
+
+}
+
+.tt-menu {
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 4px 4px;
+}
+.tt-suggestion {
+  padding: 5px 25px;
+  cursor: pointer;
+}
+.tt-suggestion:hover {
+  background-color: grey;
+  color: white;
+}
+
+
