@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoVerse</title>
     <link
-      rel="stylesheet"
+      rel="stylesheet"t
       href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
     />
       
@@ -397,6 +397,7 @@
           <img src="Images/royal+.jpeg" class="card-img-top" alt="Royal Enfield Classic 350"
                data-bs-toggle="tooltip" title="Royal Enfield Classic 350 - Best for long rides">
           <div class="card-body">
+            <br>
             <h5 class="card-title">Top Cruiser Bikes in India</h5>
             <p class="card-text">Royal Enfield Classic 350</p>
           </div>
@@ -417,6 +418,34 @@
     </div>
   </div>
 </section>
+ 
+<div aria-live="polite" aria-atomic="true" class="position-relative">
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./Images/AVlogo.png" class="rounded me-2" width="50px">
+        <strong class="me-auto">Latest Updates</strong>
+        <small class="text-body-secondary">just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Welcome back, speedster! 🚀
+      </div>
+    </div>
+
+    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./Images/AVlogo.png" class="rounded me-2" width="50px">
+        <strong class="me-auto">Latest Updates</strong>
+        <small class="text-body-secondary">5 seconds ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Ready to rev up? Check out the latest reviews!
+      </div>
+    </div>
+  </div>
+ </div>
 
 
     
@@ -453,6 +482,14 @@
     </footer>
     
     <script>
+       document.addEventListener('DOMContentLoaded', function () {
+       const toastElList = [].slice.call(document.querySelectorAll('.toast'));
+       toastElList.forEach(function (toastEl) {
+         const toast = new bootstrap.Toast(toastEl);
+         toast.show();
+       });
+       });
+      
       $(document).ready(function () {
         var suggest = [
           "Maruti Suzuki", "Tata Nexon", "Hyundai Creta", "Mahindra Scorpio",
